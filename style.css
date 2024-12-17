@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('images/Jett_fanart_-_Nanas_Sama__Nanas_samaa_on_Twitter-removebg-preview.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #8d9aa7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.column {
+    flex: 1;
+    background-color: #a6bdd4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.column-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.column-header button:hover {
+    text-decoration: underline;
+}
+
+.note-list {
+    margin-top: 10px;
+}
+
+.note-item {
+    background-color: #3a3a3a;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.note-item .edit-button, .note-item .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note-item .edit-button {
+    right: 30px;
+}
+
+button {
+    background-color: #5a5a5a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7a7a7a;
+}
+
+#texte-colonnes-default {
+    color:#121212;
+}

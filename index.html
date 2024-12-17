@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Prise de Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="column" data-list-id="todo-list">
+            <div class="column-header">
+                <h2 id="texte-colonnes-default">À faire</h2>
+            </div>
+            <button onclick="addNote('todo-list')">Ajouter une carte</button>
+            <div id="todo-list" class="note-list"></div>
+        </div>
+        <div class="column" data-list-id="in-progress-list">
+            <div class="column-header">
+                <h2 id="texte-colonnes-default">En cours</h2>
+            </div>
+            <button onclick="addNote('in-progress-list')">Ajouter une carte</button>
+            <div id="in-progress-list" class="note-list"></div>
+        </div>
+        <div class="column" data-list-id="done-list">
+            <div class="column-header">
+                <h2 id="texte-colonnes-default">Terminé</h2>
+            </div>
+            <button onclick="addNote('done-list')">Ajouter une carte</button>
+            <div id="done-list" class="note-list"></div>
+        </div>
+        <div class="column" data-list-id="memo-list">
+            <div class="column-header">
+                <h2 id="texte-colonnes-default">Bloc notes</h2>
+            </div>
+            <button onclick="addNote('memo-list')">Ajouter une carte</button>
+            <div id="memo-list" class="note-list"></div>
+        </div>
+        <div class="column" id="add-list-column">
+            <button onclick="addNewList()">Ajouter une autre liste</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
